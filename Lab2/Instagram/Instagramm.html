@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .interface {
+                box-sizing: border-box;
+                margin-top: 32px;
+                width: 100%;
+                justify-content: center;
+                flex-direction: row;
+                text-align: center;
+                display: flex;
+                vertical-align: baseline;
+                margin-bottom: 32px;
+                margin-left: auto;
+            }
+            .mine_image {
+                margin-top: 12px;
+                align-self: center;
+            }
+            .boxs {
+                max-width: 350px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                flex-grow: 1;
+            }
+            .box_1 {
+                position: relative;
+                align-items: center;
+                flex-direction: column;
+                display: flex;
+                height: 387px;
+                margin: 0 0 10px;
+                padding: 0 0 10px;
+                border: 1px solid rgb(219, 219, 219);
+                font-size: 100%;
+                vertical-align: baseline;
+                border-radius: 1px;
+                order: -1;
+            }
+            .sub1_box_1 {
+                background-image: url(https://static.cdninstagram.com/rsrc.php/v3/ys/r/WBLlWbPOKZ9.png);
+                background-size: 176px 264px;
+                width: 174px;
+                height: 50px;
+                margin-top: 36px;
+                margin-bottom: 12px;
+                vertical-align: baseline;
+                flex-direction: column;
+                align-items: center;
+                display: inline-block
+            }
+            .sub2_box_1 {
+                font-size: 14px;
+                flex-direction: column;
+                font-size: 100%;
+                display: flex;
+                margin-bottom: 10px;
+                width: 100%;
+                max-width: 350px;
+            }
+            .sub2_1_box_1 {
+                margin-left: 38px;
+                margin-right: 38px;
+                height: 16px;
+                margin-top: 24px;
+                border-radius: 1px;
+                border: 1px solid rgb(219, 219, 219);
+                overflow: hidden;
+                padding: 9px 0 7px 8px;
+                text-overflow: ellipsis;
+            }
+            .sub2_box_1input {
+                border: none;
+                width: 100%;
+            }
+            .sub2_box_1input input[type="text"] {
+                border: 1px solid blue;
+            }
+            .sub2_2_box_1 {
+                margin-top: 6px;
+                margin-left: 38px;
+                margin-right: 38px;
+                margin-bottom: 6px;
+                height: 16px;
+                border-radius: 1px;
+                border: 1px solid rgb(219, 219, 219);
+                overflow: hidden;
+                padding: 9px 0 7px 8px;
+                text-overflow: ellipsis;
+            }
+            .sub2_box_2input {
+                border: none;
+                width: 100%;
+            }
+            .sub2_box_1input input[type="text"] {
+                border: 1px solid blue;
+            }
+            .sub2_3_box_1 {
+                margin-bottom: 8px;
+                margin-left: 40px;
+                margin-right: 40px;
+                margin-top: 8px;
+                flex-direction: column;
+                display: flex;
+                align-items: baseline;
+            }
+            .sub2_3_box_1button {
+                line-height: 18px;
+                position: relative;
+                background-clip: border-box;
+                border-color: white;
+                color: white;
+                font-size: 14px;
+                font-weight: 600;
+                font-family: var('Segoe UI', Roboto, Helvetica, Arial, sans-serif);
+                width: 268px;
+                height: 32px;
+                border-radius: 8px;
+                background-color: rgb(0, 149, 246);
+            }
+            .sub2_4_box_1 {
+                flex-direction: row;
+                display: flex;
+                align-items: baseline;
+                height: 14.9875px;
+                width: 268.4px;
+                margin-bottom: 18px;
+                margin-left: 40px;
+                margin-right: 40px;
+                margin-top: 10px;
+            }
+            .sub2_4_box_1line {
+                background-color: rgb(219, 219, 219);
+                flex-grow: 1;
+                display: block;
+                flex-shrink: 1;
+                height: 1px;
+                bottom: 17px;
+                width: 101.675px;
+                position: relative;
+            }   
+            .sub2_4_box_1text {
+                bottom: 14px;
+                position: relative;
+                color: rgb(115, 115, 115);
+                margin-left: 18px;
+                margin-right: 18px;
+            }
+            .sub2_5_box_1 {
+                width: 268.4px;
+                height: 19.6px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+            .sub2_5_box_1button {
+                font-size: 14px;
+                font-weight: 600;
+                border: 0;
+                background-color: white;
+
+            }
+            .sub2_5_box_1button_ele1 {
+                background-image: url(https://static.cdninstagram.com/rsrc.php/v3/y5/r/TJztmXpWTmS.png);
+                background-position-x: -414px;
+                background-position-y: -259px;
+                width: 16px;
+                height: 16px;
+                top: 3px;
+                vertical-align: baseline;
+                margin-right: 8px;
+                position: relative;
+                display: inline-block;
+                font-size: 100%;
+                text-align: center;
+            }
+            .sub2_5_box_1button_ele2 {
+                color: #385185;
+                font-family: var('Segoe UI', Roboto, Helvetica, Arial, sans-serif);
+                text-align: center;
+            }
+            .sub2_6_box_1 {
+                margin-bottom: 6px;
+                margin-top: 28px;
+                width: 348.4px;
+                height: 16px;
+            }
+            .sub2_6_box_1link {
+                text-decoration: none;
+                color: rgb(0, 55, 107);
+            }
+            .box_2 {
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid rgb(219, 219, 219);
+                display: flex;
+                vertical-align: baseline;
+                font-size: 100%;
+                margin: 0 0 10px;
+                padding: 10px 0;
+                border-radius: 1px;
+                position: relative;
+                height: 41px;
+            }
+            .box_2_texts {
+                font-family: var('Segoe UI', Roboto, Helvetica, Arial, sans-serif);
+                font-size: 14px;
+                text-align: center;
+                margin: 15px;
+                font-weight: 400;
+            }
+            .box_2_register {
+                font-weight: 600;
+                color: rgb(0, 149, 246);
+                text-decoration: none;
+            }
+            .box_3 {
+                align-items: center;
+                flex-direction: column;
+                vertical-align: baseline;
+                display: flex;
+                font-size: 100%;
+                margin: 0 0 10px;
+                position: relative;
+                height: 94px;
+            }
+            .sub1_box_3 {
+                font-family: var('Segoe UI', Roboto, Helvetica, Arial, sans-serif);
+                align-items: center;
+                vertical-align: baseline;
+                flex-direction: column;
+                font-size: 15px;
+                font-weight: 400;
+                margin: 10px 20px 10px 20px;
+            }
+            .sub2_box_3 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 10px 0 10px 0;
+            }
+            .sub2_box_3_img {
+                margin-right: 10px;
+            }
+            body {
+                flex-direction: column;
+                display: flex;
+                position: relative;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="interface">
+            <div>
+                <img class="mine_image" src="https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk" alt="">
+            </div>
+            <div class="boxs">
+                <div class="box_1">
+                    <div class="sub1_box_1"></div>
+                    <div class="sub2_box_1">
+                        <div class="sub2_1_box_1">
+                            <input class="sub2_box_1input" type="text" placeholder="Phone number, username or email">
+                        </div>
+                        <div class="sub2_2_box_1">
+                            <input class="sub2_box_2input" type="password" placeholder="Password">
+                        </div>
+                        <div class="sub2_3_box_1">
+                            <button class="sub2_3_box_1button">
+                                Enter
+                            </button>
+                        </div>
+                        <div class="sub2_4_box_1">
+                            <div class="sub2_4_box_1line"></div>
+                            <p class="sub2_4_box_1text">OR</p>
+                            <div class="sub2_4_box_1line"></div>
+                        </div>
+                        <div class="sub2_5_box_1">
+                            <button class="sub2_5_box_1button">
+                                <span class="sub2_5_box_1button_ele1"></span>
+                                <span class="sub2_5_box_1button_ele2">Log in with your account</span>
+                            </button>
+                        </div>
+                        <div class="sub2_6_box_1">
+                            <a class="sub2_6_box_1link" href="https://www.instagram.com/accounts/password/reset/">Forgot password?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_2">
+                    <p class="box_2_texts">
+                        Don't you have an account yet?
+                        <a class="box_2_register" href="https://www.instagram.com/accounts/emailsignup/">Register</a>
+                    </p>
+                </div>
+                <div class="box_3">
+                    <div class="sub1_box_3">
+                        Install the app.
+                    </div>
+                    <div class="sub2_box_3">
+                        <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D9ED2EB35-8EB2-4925-824D-A62C39C69A85%26utm_campaign%3DloginPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge">
+                            <img class="sub2_box_3_img" src="https://static.cdninstagram.com/rsrc.php/v3/yr/r/fDjwyLC88oO.png" alt="" height="40px">
+                        </a>
+                        <a href="ms-windows-store://pdp/?productid=9nblggh5l9xt&referrer=appbadge&source=www.instagram.com&mode=mini&pos=0%2C0%2C1920%2C1020">
+                            <img src="https://static.cdninstagram.com/rsrc.php/v3/yv/r/_UbeIRgTpG-.png" alt="" height="40px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

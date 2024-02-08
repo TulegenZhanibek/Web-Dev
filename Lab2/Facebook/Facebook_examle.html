@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        @media screen and (max-width: 768px) {
+            .all {
+                flex-direction: column; /* Отображать элементы вертикально */
+            }
+            img {
+                margin-left: auto; /* Выравнивать изображение по центру */
+                margin-right: auto;
+                margin-top: 20px; /* Уменьшить отступ сверху */
+            }
+            #facebook {
+                text-align: center; /* Выравнивать текст по центру */
+                margin: 20px auto; /* Уменьшить отступы */
+            }   
+            .Login {
+                margin: 20px auto; /* Уменьшить отступы */
+            }
+        }
+        .all {
+            display: flex;
+        }
+        img {
+            margin-left: 200px;
+            margin-top: 200px;
+            text-align: center;
+            
+        }
+        #facebook {
+            margin-left: 230px;
+            margin-top: -10px;
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            font-size: 28px;
+            font-weight: normal;
+            line-height: 32px;
+            width: 500px;
+        }
+        .Login {
+            height: 356px;
+            width: 396px;
+            text-align: right;
+            align-items: center;
+            background-color: #fff;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+            box-sizing: border-box;
+            margin: -250px 800px 0;
+            padding: 0 0 28px;
+            width: 396px;
+        }
+        .Box_Input {
+            font-family: inherit;
+            font-size: 17px;
+            width: 364px;
+            display: inline-block;
+            font-size: 14px;
+            margin: auto;
+            padding: 6px 0;
+            width: 302px;
+            text-align: center;
+        }
+        .Input {
+            border-radius: 6px;
+            font-size: 19px;
+            padding: 14px 16px;
+            width: 344px;
+            background: #ffffff url(/rsrc.php/v3/yU/r/O7nelmd9XSI.png) repeat-x;
+            border: 1px solid #dddfe2;
+            color: #0756f3;
+            font-family: Helvetica, Arial, sans-serif;
+            height: 55px;
+            line-height: 16px;
+            padding: 0 8px;
+            vertical-align: middle;
+            margin-left: -94px;
+            margin-top: 16px;
+        }
+        .Input [input]:hover {
+            border: #0756f3;
+        }
+        .Password {
+            border-radius: 6px;
+            font-size: 19px;
+            padding: 14px 16px;
+            width: 344px;
+            background: #ffffff url(/rsrc.php/v3/yU/r/O7nelmd9XSI.png) repeat-x;
+            border: 1px solid #dddfe2;
+            color: #0756f3;
+            font-family: Helvetica, Arial, sans-serif;
+            height: 55px;
+            line-height: 16px;
+            padding: 0 8px;
+            vertical-align: middle;
+            margin-left: -95px;
+            margin-top: 16px;
+        }
+        .Log_in {
+            font-weight: bold;
+            width: 362px;
+            color: #fff;
+            height: 55px;
+            padding: 0 8px;
+            vertical-align: middle;
+            margin-left: -94px;
+            margin-top: 16px;
+            background-color: #1877f2;
+            border: none;
+            border-radius: 6px;
+            font-size: 21px;
+            line-height: 48px;
+            padding: 0 16px;
+        }
+        .forgot {
+            font-family: inherit;
+            padding: 0 8px;
+            font-size: 18px;
+            font-weight: 500;
+            margin-left: -82px;
+            margin-top: 16px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .hp {
+            color: #1877f2;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 5px; /* Задаем отступ сверху */
+        }
+        .line {
+            align-items: center;
+            border-bottom: 1px solid #dadde1;
+            width: 364px;
+            display: flex;
+            margin-top: 16px;
+            margin-left: -78px;
+            text-align: center;
+        }
+        .acc {
+            font-weight: bold;
+            width: 200px;
+            color: #fff;
+            height: 48px;
+            border-radius: 6px;
+            border: none;
+            background-color: #42b72a;
+            font-size: 18px;
+            vertical-align: middle;
+            margin-top: 14px;
+            margin-left: -94px;
+        }
+        .text {
+            color: black;
+            margin-left: 820px;
+            margin-top: 30px;
+            border-top: none;
+            color: #1c1e21;
+            font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            padding-top: 0;
+        }
+        .wolly {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+        body {
+            background: #fff;
+            color: #1c1e21;
+            direction: ltr;
+            line-height: 1.34;
+            margin: 0;
+            padding: 0;
+            unicode-bidi: embed;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div>
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook" height="112px">
+            <h2 id="facebook">Facebook helps you connect and share with the people in your life.</h2>
+        <div>
+            <div class="Login">
+                <div class="Box_Input">
+                    <input class="Input" type="email" placeholder="Email or phone number">
+                    <input class="Password" type="password" placeholder="Password">
+                    <button class="Log_in">Login</button><br>
+                    <!-- Ваша ссылка -->
+                    <div class="forgot">
+                        <a class="hp" href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">Forgot your password?</a>
+                    </div>
+                    <div class="line"></div>
+                    <button class="acc">Create new account</button>
+                </div>
+            </div>
+            <div class="text">
+                <a class="wolly" href="https://www.facebook.com/pages/create/?ref_type=registration_form">Create a Page</a>
+                a celebrity, a music group, or a company.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
