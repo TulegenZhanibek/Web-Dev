@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+}
+
+header {
+    box-shadow: 10px;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    background-color: black;
+    height: 60px;
+    border-radius: none;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+h2 {
+    border: 1px solid gray;
+    size: 100px;
+    position: absolute;
+    margin-top: 10px;
+    color: gray;
+    margin-left: 60px;
+    padding: 0;
+}
