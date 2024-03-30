@@ -6,7 +6,7 @@ l = s.split(' ')
 
 res = ''
 for i in range(0, n):
-    # print(int(i))
+    print(int(i))
     if i % 2 == 0:
         res += l[i] + " "
 print(res) 
