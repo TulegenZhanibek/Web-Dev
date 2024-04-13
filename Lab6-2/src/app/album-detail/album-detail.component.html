@@ -1,0 +1,13 @@
+<div *ngIf="loaded">
+    <h2>Post detail #{{post.id}}</h2>
+
+    <h4>{{post.title}}</h4>
+    <fieldset>
+        <input type="text" [(ngModel)]="inputTitle">
+        <button type="button" (click)="changeTitle()">Save</button>
+    </fieldset>
+    <button [routerLink]="['/albums']">Return Back</button>
+    <button [routerLink]="['/posts', post.id, 'photos']">See Photos</button>
+</div>
+
+<p *ngIf="!loaded">Album is loading...</p>
