@@ -1,0 +1,12 @@
+<div>
+    <ul *ngIf="loaded; else loading">
+        <li *ngFor="let c of companies">
+            <a [routerLink]="['/companies', c.id]">{{c.id}} - {{c.name}}</a>
+            <button (click)="deleteCompany(c.id)">Delete</button>
+        </li>
+    </ul>
+</div>
+
+<ng-template #loading>
+    <p>Loading</p>
+</ng-template>

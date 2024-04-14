@@ -1,11 +1,14 @@
 from django.urls import path
-from .views import company_list, company_detail, company_vacancies, vacancy_list, vacancy_detail, top_ten_vacancies
+
+from .view.cbv import CompanyListApiView, CompanyDetailApiView, CompanyVacanciesApiView
+from .view.cbv import VacancyListApView, VacancyDetailApiView, VacancyTopTenApiView
+
 
 urlpatterns = [
-    path('companies/', company_list),
-    path('companies/<int:id>/', company_detail),
-    path('companies/<int:id>/vacancies/', company_vacancies),
-    path('vacancies/', vacancy_list),
-    path('vacancies/<int:id>/', vacancy_detail),
-    path('vacancies/top_ten/', top_ten_vacancies),
+    path("companies/", CompanyListApiView.as_view()),
+    path("companies/<int:id>/", CompanyDetailApiView.as_view()),
+    path("companies/<int:id>/vacancies/", CompanyVacanciesApiView.as_view()),
+    path("vacancies/", VacancyListApView.as_view()),
+    path("vacancies/<int:id>/", VacancyDetailApiView.as_view()),
+    path("vacancies/top_ten/", VacancyTopTenApiView.as_view()),
 ]
