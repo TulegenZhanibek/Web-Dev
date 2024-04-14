@@ -8,22 +8,22 @@ import {Observable} from "rxjs";
 })
 export class CompanyService {
 
-  private apiUrl= 'http://127.0.0.1:8000'
+  private apiUrl= 'http://localhost:8000/'
   constructor(private client: HttpClient) { }
 
   getCompanies(): Observable<Company[]> {
-    return this.client.get<Company[]>(`${this.apiUrl}/api/companies/`);
+    return this.client.get<Company[]>(`${this.apiUrl}api/companies/`);
   }
 
   getCompany(id: number): Observable<Company> {
-    return this.client.get<Company>(`${this.apiUrl}/api/companies/${id}/`);
+    return this.client.get<Company>(`${this.apiUrl}api/companies/${id}/`);
   }
   deleteCompany(id: number,) {
-    return this.client.delete<any>(`${this.apiUrl}/api/companies/${id}/`);
+    return this.client.delete<any>(`${this.apiUrl}api/companies/${id}/`);
   }
-  updateCompany(id: number, newTitle: string) {
-    const payload = {title: newTitle};
-    console.log(payload);
-    return this.client.patch<Company>(`https://jsonplaceholder.typicode.com/albums/${id}/`, payload);
-  }
+  // updateCompany(id: number, newTitle: string) {
+  //   const payload = {title: newTitle};
+  //   console.log(payload);
+  //   return this.client.patch<Company>(`https://jsonplaceholder.typicode.com/albums/${id}/`, payload);
+  // }
 }

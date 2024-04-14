@@ -8,7 +8,7 @@ import {FormsModule} from "@angular/forms";
 @Component({
   selector: 'app-company-list',
   standalone: true,
-  imports: [CommonModule, RouterModule, FormsModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './company-list.component.html',
   styleUrl: './company-list.component.css'
 })
