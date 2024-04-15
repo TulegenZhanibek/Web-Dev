@@ -1,1 +1,12 @@
-<p>vacancy-list works!</p>
+<div>
+    <ul *ngIf="loaded; else loading">
+        <li *ngFor="let v of vacancies">
+            <a [routerLink]="['/vacancies', v.id]">{{v.id}} - {{v.name}}</a>
+            <button (click)="deleteVacancy(v.id)">Delete</button>
+        </li>
+    </ul>
+</div>
+
+<ng-template #loading>
+    <p>Loading</p>
+</ng-template>

@@ -21,9 +21,9 @@ export class CompanyService {
   deleteCompany(id: number,) {
     return this.client.delete<any>(`${this.apiUrl}api/companies/${id}/`);
   }
-  // updateCompany(id: number, newTitle: string) {
-  //   const payload = {title: newTitle};
-  //   console.log(payload);
-  //   return this.client.patch<Company>(`https://jsonplaceholder.typicode.com/albums/${id}/`, payload);
-  // }
+  updateCompany(id: number, newTitle: string) {
+    const payload = {title: newTitle};
+    console.log(payload);
+    return this.client.patch<Company>(`https://jsonplaceholder.typicode.com/albums/${id}/`, payload);
+  }
 }

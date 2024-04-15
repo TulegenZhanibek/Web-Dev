@@ -1,0 +1,12 @@
+<div *ngIf="loaded">
+    <h2>Company Detail #{{companies.id}}</h2>
+
+    <h4>{{companies.name}}</h4>
+    <fieldset>
+        <input type="text" [(ngModel)]="inputName">
+        <button type="button" (click)="changeTitle()">Save</button>
+    </fieldset>
+    <button [routerLink]="['/companies']">Return Back</button>
+</div>
+
+<p *ngIf="!loaded">Company is loading...</p>
