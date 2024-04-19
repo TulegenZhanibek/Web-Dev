@@ -1,8 +1,7 @@
 <div>
-    <ul *ngIf="loaded; else loading">
+    <ul>
       <li *ngFor="let v of vacancies">
           <a [routerLink]="['/vacancies', v.id]">{{v.id}} - {{v.name}}</a>
-          <button (click)="deleteVacancy(v.id)">Delete</button>
       </li>
     </ul>
 </div>

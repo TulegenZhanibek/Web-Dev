@@ -3,7 +3,6 @@ import {Company} from "../models";
 import {CompanyService} from "../company.service";
 import {CommonModule, NgForOf, NgIf} from "@angular/common";
 import {RouterLink, RouterModule} from "@angular/router";
-import {FormsModule} from "@angular/forms";
 
 @Component({
   selector: 'app-company-list',

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Vacancy} from "./models";
 import {Observable} from "rxjs";
+import {VacancyTopTenComponent} from "./vacancy-top-ten/vacancy-top-ten.component";
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +16,13 @@ export class VacancyService {
     return this.client.get<Vacancy[]>(`${this.apiUrl}api/vacancies/`);
   }
 
+  getVacanciesTopTen(): Observable<Vacancy[]> {
+    return this.client.get<Vacancy[]>(`${this.apiUrl}api/vacancies/top_ten/ `)
+  }
+
+  getCompaniesVacancies(id: number): Observable<Vacancy[]> {
+    return this.client.get<Vacancy[]>(`${this.apiUrl}api/companies/${id}/vacancies/`)
+  }
   getVacancy(id: number): Observable<Vacancy> {
     return this.client.get<Vacancy>(`${this.apiUrl}api/vacancies/${id}/`);
   }

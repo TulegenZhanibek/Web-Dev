@@ -1,0 +1,9 @@
+<ul>
+    <li *ngFor="let vacancy of vacancies">
+        <a [routerLink]="['/vacancies', vacancy.id]"> {{vacancy.id}} - {{vacancy.name}}</a>
+    </li>
+</ul>
+
+<ng-template #loading>
+    <p>Vacancies are loading...</p>
+</ng-template>
